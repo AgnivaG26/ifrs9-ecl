@@ -1,7 +1,6 @@
 """Load Freddie Mac SFLLD sample files and FRED macro CSVs.
 
-Real and simulated data go through exactly the same functions, so switching to
-the real files only changes the input folder.
+The real files and the tests' synthetic sample go through exactly the same functions.
 """
 
 from __future__ import annotations

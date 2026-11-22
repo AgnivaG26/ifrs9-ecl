@@ -1,4 +1,4 @@
-"""Stand-in data in exactly the Freddie Mac SFLLD sample-file format.
+"""Synthetic sample in exactly the Freddie Mac SFLLD sample-file format, used by the tests.
 
 Used to build and test the pipeline before the real files arrive. Everything
 downstream reads these files through the same loader as the real ones.

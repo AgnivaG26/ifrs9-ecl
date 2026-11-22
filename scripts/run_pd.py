@@ -1,8 +1,7 @@
 """PD development: dataset -> WoE scorecard -> point-in-time layer -> challenger
 -> validation. Writes tables, figures and a model file used by the ECL stage.
 
-    python scripts/run_pd.py --data data/sim      # stand-in data
-    python scripts/run_pd.py --data data/real     # real Freddie Mac files
+    python scripts/run_pd.py --data data/real --sample-frac 0.3
 """
 
 from __future__ import annotations
@@ -44,7 +43,7 @@ def pit_design(df, ttc_pd):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data", default="data/sim")
+    ap.add_argument("--data", default="data/real")
     ap.add_argument("--out", default="outputs")
     ap.add_argument("--max-rows", type=int, default=1_000_000,
                     help="cap on PD development rows: all defaults kept, non-defaults sampled and weighted")

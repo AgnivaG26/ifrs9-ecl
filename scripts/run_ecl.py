@@ -2,7 +2,7 @@
 
 Run after scripts/run_pd.py (it reads outputs/pd_model.pkl).
 
-    python scripts/run_ecl.py --data data/sim
+    python scripts/run_ecl.py --data data/real --sample-frac 0.3 --report 201712
 """
 
 from __future__ import annotations
@@ -46,7 +46,7 @@ def pit_pd(model, ttc_pd, macro_df):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data", default="data/sim")
+    ap.add_argument("--data", default="data/real")
     ap.add_argument("--out", default="outputs")
     ap.add_argument("--max-rows", type=int, default=1_000_000,
                     help="cap on PD development rows: all defaults kept, non-defaults sampled and weighted")

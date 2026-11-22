@@ -1,6 +1,6 @@
 # Freddie Mac data: licensed for internal use only, never commit it
 data/real/
-data/sim/raw/
+data/sim/
 *.zip
 *.pkl
 __pycache__/
