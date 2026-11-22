@@ -1,0 +1,26 @@
+{
+  "reporting_date": 201712,
+  "loans": 8694,
+  "exposure": 1878375296.0,
+  "ecl_weighted": 708534.1631271312,
+  "coverage_pct": 0.03772058569104665,
+  "ecl_weighted_average_path": 677982.9786815766,
+  "nonlinearity_uplift_pct": 4.506187530690697,
+  "stress_ecl": 3863167.204308533,
+  "stress_uplift_pct": 445.2337241239518,
+  "stress_stage2_share_pct": 15.596963423050381,
+  "lgd_observed_mean": 0.24810408055782318,
+  "lgd_n": 908,
+  "backtest_quarters": 20,
+  "backtest_observed_cum_dr": 0.013391826368044332,
+  "backtest_predicted_realized_macro": 0.03016658917788297,
+  "backtest_predicted_base": 0.0191550554675996,
+  "start_macro": {
+    "unemployment": 4.153,
+    "unemp_q-1": 4.175,
+    "unemp_q-2": 4.325,
+    "unemp_q-3": 4.388,
+    "hpi_growth_12m": 0.05589981437083624,
+    "mortgage_rate": 4.272
+  }
+}

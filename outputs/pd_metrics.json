@@ -1,0 +1,79 @@
+{
+  "train": {
+    "rows": 382303,
+    "defaults": 22348,
+    "observed_dr": 0.015222752120019488,
+    "gini_scorecard": 0.7989696510042783,
+    "ks_scorecard": 0.630337859787113,
+    "gini_pit": 0.8039710435847849,
+    "gini_challenger": 0.8590907573409388,
+    "mean_pd_ttc": 0.015222752120019506,
+    "mean_pd_pit": 0.01522275212001949
+  },
+  "holdout": {
+    "rows": 163487,
+    "defaults": 9763,
+    "observed_dr": 0.01556656133475574,
+    "gini_scorecard": 0.8048310418392179,
+    "ks_scorecard": 0.6416916896193411,
+    "gini_pit": 0.8112073642930411,
+    "gini_challenger": 0.8371688898615206,
+    "mean_pd_ttc": 0.015779158133917573,
+    "mean_pd_pit": 0.015814038249874277,
+    "hosmer_lemeshow_chi2": 186.9647886795865,
+    "hosmer_lemeshow_p": 3.541280753157978e-36,
+    "grades_jeffreys_p_below_0.05": 2
+  },
+  "out_of_time": {
+    "rows": 454210,
+    "defaults": 6981,
+    "observed_dr": 0.003871397885570193,
+    "gini_scorecard": 0.7120015675064373,
+    "ks_scorecard": 0.5704031936257349,
+    "gini_pit": 0.7051593265955041,
+    "gini_challenger": 0.7500936858936731,
+    "mean_pd_ttc": 0.005050639781197708,
+    "mean_pd_pit": 0.003970726910792476,
+    "hosmer_lemeshow_chi2": 324.7901016867296,
+    "hosmer_lemeshow_p": 2.159434177351289e-65,
+    "grades_jeffreys_p_below_0.05": 3
+  },
+  "psi_score": 0.6629933224279887,
+  "csi": {
+    "max_dpd_12m": 0.0007679000990761267,
+    "credit_score": 0.024408316634366697,
+    "mtm_ltv": 1.0104142301877705,
+    "rate_incentive": 0.16835374313298856,
+    "channel": 0.5170116516532988,
+    "orig_dti": 0.11289927500293694,
+    "short_term": 0.016192939186270298,
+    "loan_age": 1.0797016301102618,
+    "property_state": 0.006534490973253156,
+    "multi_borrower": 0.004348672158155302,
+    "paid_down_pct": 1.3547176157334322,
+    "loan_purpose": 0.03478984786485071
+  },
+  "features": [
+    "max_dpd_12m",
+    "credit_score",
+    "mtm_ltv",
+    "rate_incentive",
+    "channel",
+    "orig_dti",
+    "short_term",
+    "loan_age",
+    "property_state",
+    "multi_borrower",
+    "paid_down_pct",
+    "loan_purpose"
+  ],
+  "dropped_in_selection": [
+    [
+      "has_mi",
+      "wrong sign"
+    ]
+  ],
+  "pdo": 20,
+  "base_score": 600,
+  "base_odds": 50
+}

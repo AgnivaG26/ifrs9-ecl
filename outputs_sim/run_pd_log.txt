@@ -1,0 +1,50 @@
+Loading ...
+  481,540 snapshot rows, 5,726 defaults (4s)
+Binning and selecting features ...
+Training challenger ...
+Validating ...
+{
+  "train": {
+    "rows": 203828,
+    "defaults": 3452,
+    "observed_dr": 0.016935847871734994,
+    "gini_scorecard": 0.7272906874242124,
+    "ks_scorecard": 0.5571952192219299,
+    "gini_pit": 0.7492079591989307,
+    "gini_challenger": 0.859816593760856,
+    "mean_pd_ttc": 0.016935847871745898,
+    "mean_pd_pit": 0.016935847871734997
+  },
+  "holdout": {
+    "rows": 87281,
+    "defaults": 1536,
+    "observed_dr": 0.017598331824795775,
+    "gini_scorecard": 0.6980709136951619,
+    "ks_scorecard": 0.5529156294949171,
+    "gini_pit": 0.7275367505029449,
+    "gini_challenger": 0.7201828155674772,
+    "mean_pd_ttc": 0.017164872005342197,
+    "mean_pd_pit": 0.017132443730467916,
+    "hosmer_lemeshow_chi2": 11.376357706915003,
+    "hosmer_lemeshow_p": 0.18127232369478888,
+    "grades_jeffreys_p_below_0.05": 1
+  },
+  "out_of_time": {
+    "rows": 190431,
+    "defaults": 738,
+    "observed_dr": 0.003875419443262914,
+    "gini_scorecard": 0.6020025696348015,
+    "ks_scorecard": 0.4473936256181843,
+    "gini_pit": 0.6030622050459882,
+    "gini_challenger": 0.5972708120010828,
+    "mean_pd_ttc": 0.00457880725672644,
+    "mean_pd_pit": 0.0033123807872116576,
+    "hosmer_lemeshow_chi2": 308.8936930217594,
+    "hosmer_lemeshow_p": 5.26302530037431e-62,
+    "grades_jeffreys_p_below_0.05": 2
+  },
+  "psi_score": 0.7866927137929717
+}
+features: ['dpd_now', 'max_dpd_12m', 'mtm_ltv', 'rate_incentive', 'credit_score', 'orig_dti', 'property_state']
+dropped: [('has_mi', 'wrong sign'), ('orig_ltv', 'wrong sign'), ('loan_age', 'p = 0.141')]
+done in 23s

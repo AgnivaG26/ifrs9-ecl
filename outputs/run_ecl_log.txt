@@ -1,0 +1,74 @@
+Loading ...
+Fitting lifetime hazards ...
+  hazard rows 1,645,766: defaults 13,127, prepayments 72,251
+Running scenarios ...
+    quarter  observed_cum_dr  predicted_realized_macro  predicted_base
+3         4           0.0046                    0.0046          0.0053
+7         8           0.0080                    0.0089          0.0107
+11       12           0.0107                    0.0193          0.0156
+15       16           0.0134                    0.0215          0.0200
+19       20           0.0159                    0.0226          0.0241
+         loans      exposure           ecl  coverage_pct  exposure_share_pct
+stage                                                                       
+1      69848.0  1.188854e+10  1.982036e+07          0.17               95.03
+2       3102.0  5.335892e+08  6.914317e+07         12.96                4.27
+3        518.0  8.807982e+07  4.274980e+07         48.54                0.70
+Total  73468.0  1.251021e+10  1.317133e+08          1.05              100.00
+                                 weight           ecl  coverage_pct
+Upside                             0.15  1.110755e+08        0.8879
+Base                               0.55  1.226091e+08        0.9801
+Downside                           0.25  1.520542e+08        1.2154
+Severe                             0.05  1.920688e+08        1.5353
+Probability-weighted               1.00  1.317133e+08        1.0528
+Weighted-average path (one run)     NaN  1.302822e+08        1.0414
+   relative_threshold  absolute_threshold_pct  stage2_share_pct           ecl  coverage_pct
+0                 2.0                     0.1             4.557  1.331893e+08         1.065
+1                 2.0                     0.3             4.512  1.331510e+08         1.064
+2                 2.0                     0.5             4.425  1.329961e+08         1.063
+3                 3.0                     0.1             4.312  1.318401e+08         1.054
+4                 3.0                     0.3             4.282  1.318183e+08         1.054
+5                 3.0                     0.5             4.222  1.317133e+08         1.053
+6                 4.0                     0.1             4.015  1.300704e+08         1.040
+7                 4.0                     0.3             3.998  1.300607e+08         1.040
+8                 4.0                     0.5             3.960  1.299899e+08         1.039
+             n  observed_lgd  predicted_lgd
+ltv_band                                   
+<60        282         0.480          0.489
+60-80      903         0.528          0.519
+80-100    1840         0.531          0.532
+100-120    772         0.443          0.446
+>120       145         0.414          0.424
+        n  observed_lgd  predicted_lgd
+year                                  
+2006    3         0.012          0.378
+2007   17         0.200          0.486
+2008   56         0.324          0.512
+2009  247         0.439          0.511
+2010  483         0.506          0.518
+2011  657         0.543          0.514
+2012  701         0.509          0.517
+2013  534         0.486          0.501
+2014  433         0.536          0.495
+2015  363         0.531          0.495
+2016  287         0.509          0.483
+2017  161         0.461          0.486
+{
+  "reporting_date": 201712,
+  "loans": 73468,
+  "exposure": 12510208000.0,
+  "ecl_weighted": 131713325.48980391,
+  "coverage_pct": 1.0528468071018795,
+  "ecl_weighted_average_path": 130282239.35377602,
+  "nonlinearity_uplift_pct": 1.0984506738035416,
+  "stress_ecl": 199113915.19582808,
+  "stress_uplift_pct": 51.17218736629783,
+  "stress_stage2_share_pct": 5.407796591713399,
+  "lgd_observed_mean": 0.5054575800895691,
+  "lgd_n": 3942,
+  "backtest_quarters": 20,
+  "backtest_observed_cum_dr": 0.015873886223440714,
+  "backtest_predicted_realized_macro": 0.022591579257555883,
+  "backtest_predicted_base": 0.02407769034888203
+}
+done in 53s
+[peak RSS 4.77 GB, 55s]
