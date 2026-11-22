@@ -41,7 +41,7 @@ pip install -r requirements.txt
 python scripts/run_pd.py  --data data/real --sample-frac 0.3     # 0.3 peaks at ~5 GB of RAM
 python scripts/run_ecl.py --data data/real --sample-frac 0.3 --report 201712
 
-pytest -q tests     # runs on a small synthetic sample, so no licensed data is needed
+pytest -q tests     # unit tests on hand-written inputs; no licensed data needed
 ```
 
 ## How it works
@@ -67,7 +67,6 @@ FRED unemployment, house prices, mortgage rates ─────┤
 |---|---|
 | `src/ecl/config.py` | Freddie Mac field layouts, default definition, splits |
 | `src/ecl/io.py` | Loads the pipe-delimited files and FRED CSVs (handles older `svcg` names, column-count changes) |
-| `src/ecl/simulate.py` | Small synthetic sample in the exact file format, used only by the tests |
 | `src/ecl/panel.py` | Snapshot panel, 12-month default flag, censoring, loan features |
 | `src/ecl/scorecard.py` | Monotonic WoE binning, IV, feature selection, scorecard points |
 | `src/ecl/validation.py` | Gini, KS, binomial / Jeffreys / Hosmer-Lemeshow tests, PSI |

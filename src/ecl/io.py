@@ -1,7 +1,4 @@
-"""Load Freddie Mac SFLLD sample files and FRED macro CSVs.
-
-The real files and the tests' synthetic sample go through exactly the same functions.
-"""
+"""Load Freddie Mac SFLLD sample files and FRED macro CSVs."""
 
 from __future__ import annotations
 
